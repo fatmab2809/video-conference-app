@@ -2,7 +2,9 @@
 
 ## Introduction
 Video Conferencing Web Application made using React Native and WebRTC.
+
 It allows the user to create a Room, share the URL with another user and enables peer to peer connection. As of now, only two people can join the same room and video chat.
+User can leave the call which will bring him back to the homepage.
 
 ## To run the application on your computer-
 
