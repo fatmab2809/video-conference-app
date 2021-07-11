@@ -10,7 +10,7 @@ User can leave the call which will bring him back to the homepage.
 
 1. Clone the Repository
 ```
-git clone 
+git clone https://github.com/fatmab2809/video-conference-app
 ```
 
 In the project directory,
@@ -43,4 +43,3 @@ You will also see any lint errors in the console.
 ```
 npm test
 ```
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
