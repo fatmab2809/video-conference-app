@@ -1,6 +1,10 @@
-## Made using React and WebRTC
+# Microsoft Engage Challenge
 
-To run the application on your computer-
+## Introduction
+Video Conferencing Web Application made using React Native and WebRTC.
+It allows the user to create a Room, share the URL with another user and enables peer to peer connection. As of now, only two people can join the same room and video chat.
+
+## To run the application on your computer-
 
 1. Clone the Repository
 ```
