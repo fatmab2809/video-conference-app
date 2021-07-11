@@ -1,4 +1,4 @@
-## Made using React and WebRTC APIs
+## Made using React and WebRTC
 
 To run the application on your computer-
 
