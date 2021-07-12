@@ -46,10 +46,10 @@ npm test
 
 ## Screenshots
 
-Homepage
+#### Homepage
 ![image](https://user-images.githubusercontent.com/61155773/125201104-4e7bcd80-e28b-11eb-8111-d0a73c145233.png)
 
-Meeting Room
+#### Meeting Room
 ![image](https://user-images.githubusercontent.com/61155773/125201173-8a169780-e28b-11eb-9d38-a9d91746f3f0.png)
 
 ## References
