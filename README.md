@@ -47,7 +47,7 @@ The page will reload if you make edits.
 ![image](https://user-images.githubusercontent.com/61155773/125201104-4e7bcd80-e28b-11eb-8111-d0a73c145233.png)
 
 #### Meeting Room
-![image]![image](https://user-images.githubusercontent.com/61155773/125415650-b9c72a01-5a12-4bba-b247-b33bedfaa80a.png)
+![image](https://user-images.githubusercontent.com/61155773/125415650-b9c72a01-5a12-4bba-b247-b33bedfaa80a.png)
 
 ## References
 1. [Coding with Chaim](https://www.youtube.com/watch?v=JhyY8LdAQHU)
