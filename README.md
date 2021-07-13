@@ -1,10 +1,16 @@
-Made using React and WebRTC APIs
+# Microsoft Engage Challenge
 
-To run the application on your computer-
+## Introduction
+- Video Conferencing Web Application made using React Native and WebRTC.
+- Build commenced using Agile Methodology.
+- It allows the user to create a Room, share the URL with another user and enables peer to peer connection. As of now, only two people can join the same room and video chat.
+- User can leave the call which will bring him back to the homepage.
+
+## To run the application on your computer-
 
 1. Clone the Repository
 ```
-git clone 
+git clone https://github.com/fatmab2809/video-conference-app
 ```
 
 In the project directory,
@@ -30,9 +36,16 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The page will reload if you make edits.
 
-5. Launches the test runner in the interactive watch mode.
-```npm test```
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
+
+#### Homepage
+![image](https://user-images.githubusercontent.com/61155773/125201104-4e7bcd80-e28b-11eb-8111-d0a73c145233.png)
+
+#### Meeting Room
+![image](https://user-images.githubusercontent.com/61155773/125201173-8a169780-e28b-11eb-9d38-a9d91746f3f0.png)
+
+## References
+1. [Coding with Chaim](https://www.youtube.com/watch?v=JhyY8LdAQHU)
+2. [Web Dev Simplified](https://www.youtube.com/watch?v=DvlyzDZDEq4)
