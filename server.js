@@ -1,21 +1,21 @@
-const http = require("http");
 const express = require("express");
-const app = express();  // created express app
+const http = require("http");
+const app = express();
 const server = http.createServer(app);
-const socket = require("socket.io"); // create socket.io instance
+const socket = require("socket.io");
 const io = socket(server);
 // const path = require("path");
 
 const meetingRoom = {};     // create the meeting room for video chatting
 
-io.on("connection", socket => {     // when person is connected
-    socket.on("join room", meetID => {      // join room event listener
+io.on("connection", socket => {
+    socket.on("join room", meetID => {
         if (meetingRoom[meetID]) {
             meetingRoom[meetID].push(socket.id);
         } else {
             meetingRoom[meetID] = [socket.id];
         }
-        const user2 = meetingRoom[meetID].find(id => id !== socket.id); // check if 2 persons are in a room
+        const user2 = meetingRoom[meetID].find(id => id !== socket.id);
         if (user2) {
             socket.emit("other user", user2);
             socket.to(user2).emit("user joined", socket.id);
@@ -25,6 +25,13 @@ io.on("connection", socket => {     // when person is connected
     socket.on("disconnect", () => {     // to end the meeting
 		socket.broadcast.emit("EndCall")
 	});
+
+    socket.on("close Video", () =>{
+        socket.broadcast.emit("muteVideo");
+    });
+    socket.on("mute audio", () =>{
+        socket.broadcast.emit("muteAudio");
+    });
 
     socket.on("request", payload => {       // offer made to the user
         io.to(payload.target).emit("request", payload);
@@ -39,4 +46,4 @@ io.on("connection", socket => {     // when person is connected
     });
 });
 
-server.listen(8000, () => console.log('server is running on port 8000'));   // to listen on port 8000
+server.listen(8000, () => console.log('server is running on port 8000'));
